@@ -1,5 +1,31 @@
-*, *::before, *::after {
+
+
+body {
+    background-color:tan;
+    background-image: linear-gradient;
+    
+}
+
+p {
+    position: relative;
+    width: 200px;
+    border: 10px solid, blue;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-shadow: rgb(145, 108, 60);
+}
+
+button {
+    background-color: darkblue;
+    font-style: normal;
+    margin: 7px;
+    border-radius: 7px;
+    color: whitesmoke;
+    padding: 3px 8px;
+}
+
+.hide {
+    display: none;
+}
+
+.timer {
+    position:absolute
 }

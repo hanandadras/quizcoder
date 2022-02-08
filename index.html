@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title> QUIZ CODE</title>
-<link rel="stylesheet" href="assets/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
+    <div class="score">View Highscores</div>
 
-<h1>QUIZ CODE</h1>
-<p>Try to answer the following code related questions within the time limit.<br> Keep in mind that incorrect answers will penalize your score/time<br> by 10 seconds!</p>
-</p>
+    <div class="timerEl">Timer: <span id="Timer">0</span></div>
 
+    <section id="welcomeEl" class="border">
+        <h1>WELCOME!</h1> 
+        <p>Try to answer the following code related questions within the time <br>
+            limit. Keep in mind that incorrect answers will penalize your
+            score time by ten seconds!</p>
+        <button id="startBtn">Start</button>
+    </section>
 
-<div class="container">
-    <div id="question-container" class="hide"></div>
-    <div id="QUESTION" >question</div>
-    <div id="answer-button" class="btn-grid">
-    <button class="btn">Answer 1</button>
-    <button class="btn">Answer 2</button>
-    <button class="btn">Answer 3</button>
-    <button class="btn">Answer 4</button>
-    </div>
-    </div>
-     <div class="prompts">
-        <button id="start-btn" class="start-btn btn"></button>
-        <button id="next-btn" class="next-btn btn"></button>
-    </div>
-</div>
+    <section id="quizEl" class="hide border">
+    <h1>QUIZ</h1>
+    <h2 id="questionH2El" class="hide">QUESTIONS</h2>
+        <div>
+            <button id="answeBtnEl1" class="hide" ></button>
+            <button id="answeBtnEl2" class="hide" ></button>
+            <button id="answeBtnEl3" class="hide" ></button>
+            <button id="answeBtnEl4" class="hide" ></button>
+        </div>
+    </section>
 
+    <section id="end-screen" class="hide border">
+        <h2>FINAL SCORE!</h2>
+        <p>Your final score is: <span id="final-score"></span>.</p>
+        <p>
+          Initials: <input type="text" id="initials"/>
+          <button id="submit">Submit</button>
+        </p>
+    </section>
 
-
-
-
-
-
-<link rel="script" href="assets/script.js">
+    <script src="./script.js"></script>
 </body>
 </html>

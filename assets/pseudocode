@@ -1,0 +1,38 @@
+
+/*
+creat a code quiz game - users score will be time left on timer
+
+when the page loads,
+- display welcome message
+
+when user clicks start
+- hide welcome container
+- start timer
+- display question container
+- load first question
+    - display question text
+    - display answer buttons
+
+when user clicks an answer
+- check if ansert is correct
+    if incorrect
+        - display incorrect message
+        - subtract 5 seconds from timer
+
+    if correct
+       - display correct message
+
+       Do we have another question?
+        if yes
+            - load question
+        if no
+            - stop timer
+            - display score
+            - display restart button
+*/
+
+
+
+
+
+
