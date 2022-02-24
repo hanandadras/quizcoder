@@ -7,10 +7,18 @@ body {
 }
 
 p {
-    position: relative;
-    width: 200px;
-    border: 10px solid, blue;
-    box-sizing: border-box;
+    position:relative;
+    font-size: 30px
+    padding:40;
+    margin:40;
+    top: 2px;
+    bottom: 20px: 
+    left:2px;
+    right:2px
+
+    width: 80%;
+    height: 80%;
+    background:rgba(255,255,255,0.5);
 }
 
 button {
@@ -20,6 +28,7 @@ button {
     border-radius: 7px;
     color: whitesmoke;
     padding: 3px 8px;
+    size: 70px;
 }
 
 .hide {
@@ -27,5 +36,8 @@ button {
 }
 
 .timer {
-    position:absolute
+    position:absolute; 
+    size:static; 
 }
+
+
