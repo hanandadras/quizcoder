@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Document</title>
-</head>
-<body>
-    <div class="score">View Highscores</div>
-
+  </head>
+  <body>
+    <div class="score"> View Highscores</div>
+    <div class="wrapper">
+      <h1>Highscores</h1>
+      <ul id="highscores"></ul>
+      <a href="index.html"><button>Go Back</button></a>
+      <button id="clear">Clear Highscores</button>
+    </div>
     <div class="timerEl">Timer: <span id="Timer">0</span></div>
-
     <section id="welcomeEl" class="border">
-        <h1>WELCOME!</h1> 
-        <p>Try to answer the following code related questions within the time <br>
-            limit. Keep in mind that incorrect answers will penalize your
-            score time by ten seconds!</p>
-        <button id="startBtn">Start</button>
+      <h1>WELCOME!</h1>
+      <p>
+        Try to answer the following code related questions within the time
+        <br />
+        limit. Keep in mind that incorrect answers will penalize your score time
+        by ten seconds!
+      </p>
+      <button id="startBtn">Start</button>
     </section>
 
+  
     <section id="quizEl" class="hide border">
-    <h1>QUIZ</h1>
-    <h2 id="questionH2El" class="hide">QUESTIONS</h2>
-        <div>
-            <button id="answeBtnEl1" class="hide" ></button>
-            <button id="answeBtnEl2" class="hide" ></button>
-            <button id="answeBtnEl3" class="hide" ></button>
-            <button id="answeBtnEl4" class="hide" ></button>
-        </div>
+      <h1>QUIZ</h1>
+      <h2 id="questionH2El" >QUESTIONS</h2>
+      <div id="answerButtons">
+        <button id="answerBtnEl1"></button>
+        <button id="answerBtnEl2"></button>
+        <button id="answerBtnEl3"></button>
+        <button id="answerBtnEl4"></button>
+      </div>
     </section>
-
+  
     <section id="end-screen" class="hide border">
-        <h2>FINAL SCORE!</h2>
-        <p>Your final score is: <span id="final-score"></span>.</p>
-        <p>
-          Initials: <input type="text" id="initials"/>
-          <button id="submit">Submit</button>
-        </p>
+      <h2>FINAL SCORE!</h2>
+      <p>Your final score is: <span id="finalscore"></span>.</p>
+      <p>
+        Initials: <input type="text" id="initials" />
+        <button id="submit">Submit</button>
+      </p>
     </section>
 
-    <script src="./script.js"></script>
-</body>
+    <script src="./assets/script.js"></script>
+  </body>
 </html>

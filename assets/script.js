@@ -14,7 +14,6 @@ var timerId;
 let questionIndex = 0;
 
 
-
 // questions and answers array in a var
 const allQuestions = [
   {
@@ -85,6 +84,7 @@ function startTimer() {
   time--}, 1000);
 };
 
+
 // // show timer start
 //   timerEl.textContent = timer;
 
@@ -144,6 +144,17 @@ function quizEnd() {
 // clear current question
 
 quizEl.innerHtml = "";
+
+//show scores 
+
+var finalscore = JSON.parse(window.localStorage.getItem("finalscore"));
+
+
+//show initials
+
+
+
+
 
 //add event listener to start quiz
 startBtn.addEventListener('click', startQuiz)
