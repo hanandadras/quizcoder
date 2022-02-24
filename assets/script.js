@@ -154,8 +154,6 @@ var finalscore = JSON.parse(window.localStorage.getItem("finalscore"));
 
 
 
-
-
 //add event listener to start quiz
 startBtn.addEventListener('click', startQuiz)
 
